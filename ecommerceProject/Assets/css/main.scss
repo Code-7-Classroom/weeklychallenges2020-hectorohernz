@@ -261,7 +261,7 @@ body,html{
 .social__media__facebook::before{  /* Social Icons For Footer*/
     display: block;
     content: "";
-    background-image: url(/Assets/images/socialmediaicons/facebook.png);
+    background-image: url(../images/socialmediaicons/facebook.png);
     height: 35px;
     width:  35px;
     background-repeat: no-repeat;
@@ -270,7 +270,7 @@ body,html{
 .social__media__instagram::before{ /* Social Icons For Footer*/
     display:block;
     content: "";
-    background-image: url(/Assets/images/socialmediaicons/instagramicon.png);
+    background-image: url(../images/socialmediaicons/instagramicon.png);
     height:  35px;
     width:  35px;
     background-repeat: no-repeat;
@@ -280,7 +280,7 @@ body,html{
 .social__media__twitter::before{  /* Social Icons For Footer*/
     display:block;
     content: "";
-    background-image: url(/Assets/images/socialmediaicons/twittericon.png);
+    background-image: url(../images/socialmediaicons/twittericon.png);
     height:  35px;
     width:  35px;
     background-repeat: no-repeat;
@@ -289,7 +289,7 @@ body,html{
 .social__media__snapchat::before{  /* Social Icons For Footer*/
     display: block;
     content: "";
-    background-image: url(/Assets/images/socialmediaicons/snapchaticon.png);
+    background-image: url(../images/socialmediaicons/snapchaticon.png);
     height: 35px;
     width: 35px;
     background-repeat:no-repeat;
@@ -627,7 +627,7 @@ body,html{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(4,1fr);
-        background: url(/Assets/images/photo-1458560871784-56d23406c091.jpeg);
+        background: url(../images/photo-1458560871784-56d23406c091.jpeg);
             background-repeat: no-repeat;
             background-size:cover; 
             background-position: center;

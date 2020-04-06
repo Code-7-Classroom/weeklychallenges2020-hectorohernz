@@ -5,10 +5,10 @@ class Person {
         this.job = job;
         this.age = age;
     }
-    fetchJob(){  // Method to console log Person name and their job 
+    fetchJob() {  // Method to console log Person name and their job 
         console.log(`${this.name} is a ${this.job}`);
     }
-    exercise(){ // Method to console log Person favorite hobbie 
+    exercise() { // Method to console log Person favorite hobbie 
         console.log("I love Running long distance.");
     }
 }
@@ -19,7 +19,6 @@ class Programmer extends Person{ // An extention to Person, with passing same me
         this.language = [lang];
         this.busy = true;
     }
-   
     completeTask(){ // Method that updates the busy property on that programmer to be false.
         this.busy = false;
     }
@@ -43,22 +42,19 @@ class Programmer extends Person{ // An extention to Person, with passing same me
     
 }
 
-let omar = new Programmer("hector Hernandez", "Front End", 18, "Javascript");
-omar.learnLanguage("Swift");
+ let omar = new Programmer("hector Hernandez", "Front End", 18, "Javascript");
+ omar.learnLanguage("Swift");
 omar.learnLanguage("Go");
-console.log(omar);
-omar.listLanguage();
 
-let steve = new Programmer("Steve Billy Bob", "Back-end", 19, "C++")
-console.log(steve);
-steve.listLanguage();
+ let steve = new Programmer("Steve Billy Bob", "Back-end", 19, "C++")
+ console.log(steve);
+ steve.listLanguage();
 steve.offerNewTask();
-steve.completeTask();
-steve.offerNewTask();
+ steve.completeTask();
+ steve.offerNewTask();
 
-let kelly = new Programmer("Kelly Martinez", "Moblie App Dev", 22, "C#");
-
-console.log(kelly);
+ let kelly = new Programmer("Kelly Martinez", "Moblie App Dev", 22, "C#");
+ console.log(kelly);
 kelly.learnLanguage("English");
 console.log(kelly);
-
+ 
