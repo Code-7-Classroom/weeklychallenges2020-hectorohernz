@@ -1,0 +1,113 @@
+$titleBorder: 7px solid red;  
+$articleborder: 2px solid red;
+$newspapermargin: 0px 100px;
+
+@mixin gridfont($newsfonts) {
+    @if $newsfonts == trending{
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    @else if $newsfonts == viral{
+        font-size: 50px;
+    }
+
+    @else {
+        font-size: 20;
+    }
+    
+}
+@mixin articlecon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+
+    .title__bold{
+    border-top: $titleBorder;
+    text-align: center;
+    font-size: 7em;
+    letter-spacing: 10px;
+    margin: 25px 0px;
+    padding-top: 25px;
+    }
+
+    .contactinfo{
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        height: 50px;
+        margin: 50px 100px;
+        border: $articleborder;
+    
+        p, h2{
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+    }
+
+}
+
+.newsfeed-section{
+    
+        @include articlecon();
+
+        .article-viral{
+        text-align: center;
+        margin: 0px 50px;  
+        margin-bottom: 25px; 
+        padding-bottom: 25px;
+        border-bottom: $articleborder;
+            h2{
+                @include gridfont(viral);
+            }
+            img{
+                margin: 25px 0px;
+            }
+            p{
+                font-size: 25px;
+            }
+
+        }
+
+        .article-trending{
+            display: grid;
+            grid-template-columns: repeat(3,33%);
+            width: 1200px;
+            grid-column-gap: 25px;
+            margin: 40px;
+            grid-row-gap: 25px;
+
+            .article__con{
+                @include articlecon();
+                img{
+                    margin: 25px 0px;
+                    width: 100%;
+                }
+            }
+            .article__trending__text{
+            @include gridfont(trending);
+            }
+        }
+ }
+
+.article__title__tooltip__viral::after{
+    content:" News From New York";
+    font-size: 20px;
+    position: absolute;
+    top: 410px;
+    left: 350px;
+    background: red;
+    padding:10px;
+    border-radius: 5px;
+    opacity: .2;
+   
+}
+.article__title__tooltip__viral:hover::after{
+    opacity: 1;
+}

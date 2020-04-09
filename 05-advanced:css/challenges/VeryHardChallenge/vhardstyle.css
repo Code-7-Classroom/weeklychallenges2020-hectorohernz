@@ -1,0 +1,117 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header .title__bold {
+  border-top: 7px solid red;
+  text-align: center;
+  font-size: 7em;
+  letter-spacing: 10px;
+  margin: 25px 0px;
+  padding-top: 25px;
+}
+
+header .contactinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  margin: 50px 100px;
+  border: 2px solid red;
+}
+
+header .contactinfo p, header .contactinfo h2 {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.newsfeed-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newsfeed-section .article-viral {
+  text-align: center;
+  margin: 0px 50px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid red;
+}
+
+.newsfeed-section .article-viral h2 {
+  font-size: 50px;
+}
+
+.newsfeed-section .article-viral img {
+  margin: 25px 0px;
+}
+
+.newsfeed-section .article-viral p {
+  font-size: 25px;
+}
+
+.newsfeed-section .article-trending {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (33%)[3];
+      grid-template-columns: repeat(3, 33%);
+  width: 1200px;
+  grid-column-gap: 25px;
+  margin: 40px;
+  grid-row-gap: 25px;
+}
+
+.newsfeed-section .article-trending .article__con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newsfeed-section .article-trending .article__con img {
+  margin: 25px 0px;
+  width: 100%;
+}
+
+.newsfeed-section .article-trending .article__trending__text {
+  font-size: 30px;
+  margin: 5px;
+}
+
+.article__title__tooltip__viral::after {
+  content: " News From New York";
+  font-size: 20px;
+  position: absolute;
+  top: 410px;
+  left: 350px;
+  background: red;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: .2;
+}
+
+.article__title__tooltip__viral:hover::after {
+  opacity: 1;
+}
+/*# sourceMappingURL=vhardstyle.css.map */

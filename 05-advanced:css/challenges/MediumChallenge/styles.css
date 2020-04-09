@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body,html{
+    font-family: 'Open Sans', sans-serif;
+    background: #FAFAF2;
+    color: #2F3538;
+}
+.index-header-logo{
+    font-size: 75px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 10px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.section-area{
+    display: flex;
+    justify-content: center;
+}
+.product-section{
+    height: 800px;
+    width:900px;
+    /* background: black; */
+    display: grid;
+    grid-template-rows: repeat(2,50%);
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 0px 20px ;
+}
+.product_containter_title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.product_containter{
+    margin: 10px;
+}
+.product_containter_font{
+    font-size: 18px;
+    margin:5px 0px;
+}
+.product_containter_links{
+    text-decoration: none;
+    color: #2F3538;
+} 
+.product_containter_image{
+    width: 100%;
+}

@@ -27,9 +27,7 @@ menuBtn.addEventListener("click", function(){
 
  
 // Shop By Category Filter Bar 
-
 var list = document.querySelector(".dropdown");
-
 function filterByGenre(genre){ // Initilze a function for 
     var albums = document.querySelectorAll(".individual__product");
     for(i = 0; i < albums.length; i++){
@@ -58,7 +56,7 @@ function filterByGenre(genre){ // Initilze a function for
 }
 
 
-list.addEventListener("change",function(event){
+list.addEventListener("change", function (event){
     var selectedGenre = event.target.value;
     filterByGenre(selectedGenre);
 })

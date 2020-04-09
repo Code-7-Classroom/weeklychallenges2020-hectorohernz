@@ -705,7 +705,7 @@ body, html {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 40px 25px;
-  border-bottom: 25px black solid;
+  border-bottom: 25px #d2c9d9 solid;
 }
 
 @media only screen and (min-width: 800px) {

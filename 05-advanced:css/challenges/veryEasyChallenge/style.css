@@ -1,0 +1,29 @@
+/* Creating Checkerboard for Project Converted from SCSS*/
+
+.checkboard {
+    height: 500px;
+    width: 500px;
+    border: 25px black solid;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .row-2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .white {
+    height: 62.5px;
+    width: 62.5px;
+    background-color: white;
+  }
+  
+  .black {
+    height: 62.5px;
+    width: 62.5px;
+    background-color: black;
+  }
