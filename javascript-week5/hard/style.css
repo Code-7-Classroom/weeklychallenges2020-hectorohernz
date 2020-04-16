@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 15px;
+    margin: 15px;
+    border: 2px dotted black;
+    background: black;
+    color: white;
+    font-size: 15px;
+}
+
+.red{
+    background: red;
+}
+
+.white{
+    background: white;
+}
