@@ -10,10 +10,22 @@
 var buttonOne = document.getElementById("btn-1");
 var buttonTwo = document.getElementById("btn-2");
 var body = document.getElementById("body");
+var white  = "white";
+var red = "red";
 
-buttonOne.addEventListener("click", () => {
-    body.classList.add("red");
-});
-buttonTwo.addEventListener("click", () => {
-  body.classList.remove("red");
-});
+window.updateTheBackground = function(className) {
+  if(className === white){
+    this.body.classList.toggle(className);
+    this.body.classList.remove(this.red);
+  } else{
+    this.body.classList.toggle(className);
+    this.body.classList.remove(this.white);
+  }
+}
+buttonOne.addEventListener("click",() => {
+  window.updateTheBackground("red")
+})
+
+buttonTwo.addEventListener("click",() => {
+  window.updateTheBackground("white")
+})
