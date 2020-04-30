@@ -1,0 +1,64 @@
+{
+    "employees" : [
+        {
+            "id": 1,
+            "name": "Steve",
+            "salary": 60000,
+            "deparment": "Marketing"
+        },
+        {
+            "id": 2,
+            "name": "Carol",
+            "salary": "75000",
+            "deparment": "Engineer"
+        },
+        {
+            "id": 3,
+            "name": "Billy",
+            "salary": 25000,
+            "deparment": "Farmer"
+        },
+        {
+            "id": 4,
+            "name": "Mike",
+            "salary": 50000,
+            "deparment": "Marketing"
+        },
+        {
+            "id": 5,
+            "name": "Leo",
+            "salary": 43000,
+            "deparment": "Manager"
+        },
+        {
+            "id": 6,
+            "name": "Ed",
+            "salary": 23000,
+            "deparment": "Cashier"
+        },
+        {
+            "id": 7,
+            "name": "Drake",
+            "salary": 56000,
+            "deparment": "Rapper"
+        },
+        {
+            "id": 8,
+            "name": "Lucy",
+            "salary": 200000,
+            "deparment": "Teacher"
+        },
+        {
+            "id": 9,
+            "name": "Reggie",
+            "salary": 100000,
+            "deparment": "Teacher"
+        },
+        {
+            "id": 10,
+            "name": "Billy Bob Joe Jr The Third",
+            "salary": 10,
+            "deparment": "couch surfer"
+        }
+    ]
+}
