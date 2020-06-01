@@ -2,7 +2,7 @@ show databases;
 
 use sqlWeek;
 show tables;
-;
+
 
 -- Create a new query that adds an additional column to the results to show how many cars have the same Make.
 
@@ -32,3 +32,7 @@ UPDATE Vcars SET Color = 'Black' WHERE Id = 2;
 UPDATE Vcars SET Color = 'Grey' WHERE Id = 3;
 
 SELECT CONCAT(Make, ' ', Model) FROM vCars;
+
+-- Create a new query that adds an additional column to the results to show how many cars have the same Make.
+SELECT make, COUNT(*) 
+FROM vCars GROUP BY make having COUNT(*) >= 1 ;
